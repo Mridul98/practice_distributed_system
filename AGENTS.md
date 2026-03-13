@@ -146,9 +146,11 @@ docker-compose down -v
 3. **Handle failures gracefully** - distributed systems must handle node failures
 4. **Test with real failures** - inject network partitions, node crashes
 5. **Keep implementations simple** - focus on correctness over optimization
+6. **Use fixtures for test setup** - especially for async distributed tests
 
 ## Resources
 
 - Curriculum: `distributed_systems_curriculum.md`
+- Books: `./books/ddia-book.pdf`
 - Docker services: `docker-compose.yml`
 - Python style: PEP 8 + ruff defaults

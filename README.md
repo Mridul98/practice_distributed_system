@@ -11,6 +11,14 @@ This repository contains a 5-month intensive curriculum for learning distributed
 - Python 3.10+
 - Docker & Docker Compose
 
+## How to Use This Repository
+
+1. **Read the curriculum** - Start with `distributed_systems_curriculum.md` to understand the learning path
+2. **Set up environment** - Run `docker-compose up -d` to start all services
+3. **Complete labs** - Work through hands-on exercises in `labs/`
+4. **Take exams** - Implement practical distributed systems in `exams/`
+5. **Run tests** - Validate your solutions with `pytest`
+
 ## Quick Start
 
 ```bash
@@ -28,14 +36,24 @@ pytest
 
 ## Repository Structure
 
-- `distributed_systems_curriculum.md` - Full curriculum (5 phases, 13 chapters)
-- `docker-compose.yml` - Local development environment
-- `prometheus.yml` - Prometheus configuration
-- `books/` - Recommended reading (DDIA and other resources)
-- `labs/` - Implementation labs
-- `exams/` - Exam implementations
-- `tests/` - Test suites
-- `AGENTS.md` - Guidelines for AI agents
+```
+.
+├── distributed_systems_curriculum.md   # Full curriculum (5 phases, 13 chapters)
+├── docker-compose.yml                   # Local development environment
+├── prometheus.yml                       # Prometheus configuration
+├── README.md                            # Project overview
+├── AGENTS.md                            # Guidelines for AI agents
+├── books/                               # Recommended reading (DDIA)
+├── labs/                                # Implementation labs (hands-on exercises)
+├── exams/                               # Exam implementations
+└── tests/                               # Test suites for exams
+```
+
+### Directory Details
+
+- `labs/` - Hands-on implementation exercises for each chapter
+- `exams/` - Practical exam implementations (Raft, Kafka, etc.)
+- `tests/` - pytest test suites validating exam solutions
 
 ## Docker Services
 
