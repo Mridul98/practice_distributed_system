@@ -100,16 +100,27 @@ This curriculum follows a **"theory → implementation → production"** progres
 #### Resources
 
 **Primary**:
-- "Designing Data-Intensive Applications" - Chapter 1 (free sample: O'Reilly)
 - MIT 6.824 Lecture 1: Introduction (https://pdos.csail.mit.edu/6.824/)
+- Distributed Systems for Fun and Profit (http://book.mixu.net/distsys/)
 
-**Supplementary**:
-- "Distributed Systems: Concepts and Design" - Chapter 1
-- "Distributed Systems for Fun and Profit" - Chapter 1-2
+**Supplementary - Books**:
+- "Designing Data-Intensive Applications" - Martin Kleppmann (./books/ddia-book.pdf)
+- Distributed Systems: Concepts and Design - Chapter 1
+- Testing Distributed Systems Guide (https://asatarin.github.io/testing-distributed-systems/)
+
+**University Courses**:
+- University of Cambridge - Distributed Systems (https://www.cl.cam.ac.uk/teaching/2021/ConcDisSys/)
+- Stanford CS244b: Distributed Systems (https://www.scs.stanford.edu/12au-cs244b/)
 
 **Papers**:
-- "CAP Twelve Years Later" - Eric Brewer
-- "Harvest, Yield and Scalable Tolerant Systems" - Brewer et al.
+- "CAP Twelve Years Later" - Eric Brewer (https://www.infoq.com/articles/cap-twelve-years-later/)
+- "Harvest, Yield and Scalable Tolerant Systems" - Brewer et al. (https://arxiv.org/abs/cs/0703000)
+- "A Note on Distributed Computing" - https://scholarworks.iu.edu/dspace/bitstream/handle/2022.196/13759/Birman%20-%20A%20Note%20on%20Distributed%20Computing.pdf
+- "The Byzantine Generals Problem" - https://lamport.azurewebsites.net/pubs/byz.pdf
+
+**Additional Resources**:
+- High Scalability Blog (http://highscalability.com/)
+- ACM Queue - Distributed Systems (https://queue.acm.org/listing.cfm?topic=distributed_systems)
 
 #### Lab 1.1: Network Partition Simulator
 

@@ -13,6 +13,7 @@ This repository contains a distributed systems curriculum with Python implementa
 ├── prometheus.yml                       # Prometheus configuration
 ├── README.md                            # Project overview
 ├── AGENTS.md                            # This file
+├── books/                               # Recommended reading
 ├── labs/                                # Implementation labs
 ├── exams/                               # Exam implementations
 └── tests/                               # Test suites

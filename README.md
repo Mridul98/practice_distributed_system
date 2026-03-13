@@ -31,6 +31,7 @@ pytest
 - `distributed_systems_curriculum.md` - Full curriculum (5 phases, 13 chapters)
 - `docker-compose.yml` - Local development environment
 - `prometheus.yml` - Prometheus configuration
+- `books/` - Recommended reading (DDIA and other resources)
 - `labs/` - Implementation labs
 - `exams/` - Exam implementations
 - `tests/` - Test suites
@@ -147,6 +148,7 @@ pre-commit run --all-files
 
 - [Curriculum Document](distributed_systems_curriculum.md)
 - [Agents Guidelines](AGENTS.md)
+- Books: `./books/ddia-book.pdf` (Designing Data-Intensive Applications)
 - PEP 8 Style Guide
 - Python typing documentation
 
