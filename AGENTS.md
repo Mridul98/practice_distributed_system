@@ -4,6 +4,20 @@
 
 This repository contains a distributed systems curriculum with Python implementations for labs and exams.
 
+## Repository Structure
+
+```
+.
+├── distributed_systems_curriculum.md   # Full curriculum (5 phases, 13 chapters)
+├── docker-compose.yml                   # Local development environment
+├── prometheus.yml                       # Prometheus configuration
+├── README.md                            # Project overview
+├── AGENTS.md                            # This file
+├── labs/                                # Implementation labs
+├── exams/                               # Exam implementations
+└── tests/                               # Test suites
+```
+
 ## Build, Lint, and Test Commands
 
 ### Python Environment Setup
@@ -67,13 +81,8 @@ docker-compose down -v
 
 ### Imports
 
-```python
-# Standard library first, then third-party, then local
-import os
-from typing import List, Dict, Optional
-import grpc
-from .models import User
-```
+- Standard library first, then third-party, then local
+- Use absolute imports, avoid wildcard imports
 
 ### Formatting
 
@@ -88,14 +97,6 @@ from .models import User
 - Use `Optional[X]` instead of `X | None`
 - Add return type annotations to all functions
 
-```python
-def calculate_replica_count(total_nodes: int, replication_factor: int) -> int:
-    return min(total_nodes, replication_factor)
-
-def get_nodes(self) -> List[str]:
-    return self._nodes.copy()
-```
-
 ### Naming Conventions
 
 - **Variables/functions**: `snake_case`
@@ -109,17 +110,6 @@ def get_nodes(self) -> List[str]:
 - Catch specific exceptions, not bare `except:`
 - Include context in error messages
 
-```python
-class ReplicationError(Exception):
-    pass
-
-def replicate_write(self, key: str, value: str) -> None:
-    try:
-        node.send(key, value)
-    except ConnectionError as e:
-        raise NodeUnavailableError(f"Node {node} unavailable") from e
-```
-
 ### Logging
 
 - Use `logging` module, not print statements
@@ -131,16 +121,6 @@ def replicate_write(self, key: str, value: str) -> None:
 - Write descriptive test names: `test_<method>_<scenario>_<expected>`
 - Use fixtures for common setup
 
-```python
-@pytest.fixture
-def node(self) -> RaftNode:
-    return RaftNode(node_id="node-1", peers=["node-2", "node-3"])
-
-def test_becomes_candidate_on_timeout(self, node) -> None:
-    node._handle_election_timeout()
-    assert node.state == State.CANDIDATE
-```
-
 ### Concurrency and Async
 
 - Use `asyncio` for async I/O operations
@@ -151,6 +131,12 @@ def test_becomes_candidate_on_timeout(self, node) -> None:
 - One class per file for large classes
 - Use `__init__.py` to mark packages
 - Keep test files in `tests/` with `test_` prefix
+
+### Documentation
+
+- Use docstrings for all public classes and functions
+- Follow Google docstring format
+- Document exceptions that can be raised
 
 ## Notes for Agents
 
